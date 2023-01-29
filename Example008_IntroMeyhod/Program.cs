@@ -8,21 +8,26 @@ return result;
 }
 
 
-int a1 = 5515;
+int a1 = 555;
 int b1 = 21; 
 int c1 = 39;
 
 int a2 = 12;
-int b2 = 2311;
+int b2 = 231;
 int c2 = 32;
 
 int a3 = 13;
-int b3 = 23;
+int b3 = 999;
 int c3 = 313;
 
-int max1 = Max(a1, b1, c1);
-int max1 = Max(a2, b2, c2);
-int max1 = Max(a3, b3, c3);
-int max = Max(max1, max2, max3);
+// int max1 = Max(a1, b1, c1);
+// int max1 = Max(a2, b2, c2);
+// int max1 = Max(a3, b3, c3);
+// int max = Max(max1, max2, max3);
+
+int max = Max(
+    Max(a1, b1, c1), 
+    Max(a2, b2, c2), 
+    Max(a3, b3, c3));
 
 Console.WriteLine(max);
